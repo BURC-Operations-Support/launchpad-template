@@ -1,0 +1,95 @@
+
+# ============================================================
+# BURC Launchpad Template — .gitignore
+# ============================================================
+
+# ROS 2 / colcon generated artifacts
+/build/
+/install/
+/log/
+/logs/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python packaging artifacts
+*.egg-info/
+*.egg
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# C++ / CMake generated artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Testing/
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# Editor and IDE files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Generated test results
+test-results/
+junit.xml
+
+# Large robotics data and recordings
+*.bag
+*.bag.active
+*.db3
+*.mcap
+*.rosbag
+rosbag2_*/
+
+# Local container overrides
+docker-compose.override.yml
+compose.override.yaml

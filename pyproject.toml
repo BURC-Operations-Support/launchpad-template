@@ -1,0 +1,40 @@
+# ============================================================
+# TITLE: BURC Launchpad Template pyproject.toml
+# AUTHOR: Cole H. Shaigec
+# DESCRIPTION: Project-level Python dependency configuration
+# MAINTAINERS: Boston University Robotics Club
+#
+# Python dependencies are managed using uv.
+# ROS dependencies are declared in package.xml and
+# resolved using rosdep.
+#
+# NOTICES TO USERS
+# - The BURC standard for managing project-level Python dependencies is:
+#
+#   uv add <dependency>       (add a dependency)
+#   uv remove <dependency>    (remove a dependency)
+#   uv sync --locked          (install locked dependencies)
+#
+#   DO NOT install project dependencies using pip or uv pip install.
+#   These commands bypass the project's dependency declarations.
+#
+#   uv add updates pyproject.toml and uv.lock, ensuring that dependencies
+#   are declared, resolved, and reproducible across environments.
+#
+#   Dependencies installed manually without being declared may appear
+#   to work locally but will not be reproduced in clean builds or CI. 
+#   This is a major source of AVOIDABLE bugs!
+#
+#   ROS dependencies remain managed through package.xml and rosdep.
+#   
+# ============================================================
+
+[project]
+name = "burc-launchpad-template"
+version = "0.1.0"
+description = "Standardized ROS2 project template for BURC"
+requires-python = ">=3.14,<3.15"
+dependencies = []
+
+[tool.uv]
+package = false
