@@ -33,6 +33,14 @@ SHELL ["/bin/bash", "-c"]
 
 WORKDIR /workspace
 
+# Identify the Launchpad development environment to shared
+# infrastructure tooling, including the Makefile and doctor.
+#
+# This allows tooling to distinguish container-side execution
+# from host-side execution without relying on Docker-specific
+# filesystem heuristics.
+ENV LAUNCHPAD_ENV=development
+
 # Store project Python dependencies outside the bind-mounted
 # source tree. The environment can be persisted by Compose.
 #
