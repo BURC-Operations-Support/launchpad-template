@@ -1,0 +1,25 @@
+{
+    "name": "BURC Launchpad",
+
+    "dockerComposeFile": "../compose.yaml",
+    "service": "dev",
+    "workspaceFolder": "/workspace",
+
+    "overrideCommand": false,
+    "shutdownAction": "stopCompose",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy",
+                "charliermarsh.ruff",
+                "ms-vscode.cpptools"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/venv/bin/python"
+            }
+        }
+    }
+}
